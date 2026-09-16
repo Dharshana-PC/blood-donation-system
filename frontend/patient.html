@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Patient Portal</h1>
+
+    <!-- REGISTER -->
+    <div id="registerSection" class="card">
+
+        <h2>Register Patient</h2>
+
+        <input id="patient_name" placeholder="Name">
+
+        <select id="patient_blood">
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>O+</option><option>O-</option>
+            <option>AB+</option><option>AB-</option>
+        </select>
+
+        <input id="patient_phone" placeholder="Phone">
+        <input id="patient_location" placeholder="Location">
+        <input id="patient_pincode" placeholder="Pincode">
+
+        <button onclick="registerPatient()">
+            Register Patient
+        </button>
+
+    </div>
+
+    <!-- SEARCH (HIDDEN INITIALLY) -->
+    <div id="searchSection" class="card" style="display:none;">
+
+        <h2>Search Donors</h2>
+
+        <select id="blood">
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>O+</option><option>O-</option>
+            <option>AB+</option><option>AB-</option>
+        </select>
+
+        <input id="pincode" placeholder="Pincode">
+
+        <button onclick="searchDonors()">Search</button>
+
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
